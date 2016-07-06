@@ -1,0 +1,410 @@
+/*********************** Font Sizes ***********************/
+body {
+		font-size: 13px;
+}
+
+h2 {
+	font-size: 2em;
+	text-align: center;
+}
+
+h3 {
+	font-size: 1.3em;
+}
+
+h4 {
+	font-size: 1em;
+}
+
+a {
+	font-weight: bold;
+	color: #00f;
+}
+
+.footer .footer-copy p {
+	font-size: 0.7em;	
+	line-height: .7em;
+}
+
+/*********************** End Font Sizes ***********************/
+
+/*********************** Content Styles ***********************/
+
+.system-msg {
+	border-left: 12px solid;
+	margin: 24px auto 0;
+}
+
+	.system-msg.error {
+		border-color: #f00;
+	}
+
+	.system-msg.error .fa {
+		color: #f00;
+	}
+
+	.system-msg.pass {
+		border-color: #690;
+	}
+
+	.system-msg.pass  .fa {
+		color: #690;
+	}
+
+	.system-msg .fa {
+		float: left;
+		margin: 10px 6px 0 -10px;
+		font-size: 1.5em;
+	}
+
+	.system-msg p {
+		padding: 12px 0 0 16px;
+		margin: 0;
+		text-align: center;
+		font-size: 1.2em;
+		font-weight: bold;
+	}
+
+/*~*~*~*~*~*~*~* Panel Styles *~*~*~*~*~*~*~*/
+
+.panel 
+{
+    background-color: #eee;
+    padding: 0 20px 10px;
+    box-shadow: 0 1px 1px 0 #999;
+    -webkit-box-shadow: 0 1px 1px 0 #999;
+}
+
+
+	.panel .panel-title {
+		background-color: #94AAB5;
+		margin: 0 -20px 0;
+		padding: 0 20px 10px;
+		height: 30px;
+		color: #fff;
+	}
+
+		.panel .panel-title h3 {
+			margin: 0;
+			padding: 0;
+			line-height: 40px;
+		}
+
+		.panel .panel-title .panel-icon {
+			margin-right: 12px;
+		}
+		
+	.panel .panel-content {
+		line-height: 19px;
+	}
+	
+.system-check-panel.panel {
+	margin: 24px auto;	
+	width: 400px;
+}
+
+.system-check-panel.panel .panel-content {
+	text-align: center;
+}
+
+/*~*~*~*~*~*~*~* Table Styles *~*~*~*~*~*~*~*/
+
+.system-check-table {
+	width: 100%;
+	margin: 24px auto;
+	border-collapse:collapse;
+}
+
+.system-check-table th {
+	background-color: #94AAB5;
+	color: #fff;
+	font-size: 0.9em;
+	padding: 10px 0;
+}
+
+.system-check-table tbody {
+	font-size: 1em;
+}
+
+.system-check-table tbody td {
+	border: 4px solid #fff;	
+}
+
+.system-check-table td {
+	padding: 6px 10px;
+}
+
+.system-check-table tr:nth-child(odd) {
+	background-color: #d9e4ee;
+}
+
+.system-check-table tr:nth-child(even) {
+	background-color: #eee;
+}
+
+.system-check-table tr td:nth-child(1) {
+	width: 150px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.system-check-table tr td:nth-child(2) {
+	width: 200px;
+}
+
+.system-check-table tr td:nth-child(3) {
+	width: 300px;
+}
+
+.system-check-table tr td:nth-child(4) {
+	text-align: center;
+}
+
+/*~*~*~*~*~*~*~* Cofirmation Dialog *~*~*~*~*~*~*~*/
+
+.confirmation {
+	text-align: center;
+/* 	font-size: 1.2em; */
+	font-weight: bold;
+	margin-bottom: 4px;
+}
+
+.confirmation p {
+	margin-bottom: 6px;
+}
+
+.passCheck, .failCheck {
+	margin: 0 2px;
+}
+
+/*~*~*~*~*~*~*~* Pass/Fail Icons *~*~*~*~*~*~*~*/
+
+.icon-key {
+	list-style: none;
+}
+
+.fa {
+	font-size: 16px;
+}
+
+.fa-check {
+	color: #690;
+}
+
+.fa-times {
+	color: #f00;
+}
+
+.fa-spinner {
+	color: #666;
+}
+
+.waiting:before {
+	display: inline-block;
+	margin-left: -2px;
+	content: url(../media/waiting.gif);
+}
+
+.waiting-static:before {
+	display: inline-block;
+	margin-left: -2px;
+	content: url(../media/waiting-static.png);
+}
+
+/*~*~*~*~*~*~*~* Flash Controls *~*~*~*~*~*~*~*/
+
+.installFlash,
+.upgradeFlash,
+.displayFlash {
+	display: none;
+}
+
+/*~*~*~*~*~*~*~* Mic/Audio Instructions *~*~*~*~*~*~*~*/
+
+.audio-instructions {
+	text-align: center;
+}
+
+ol.mic-instructions {
+	padding-left: 12px;	
+}
+
+ol.mic-instructions li {		
+	margin: 0 auto;
+	text-align: left;
+	line-height: 16px;
+}
+
+.record-text,
+.stop-text,
+.listen-text,
+.play-text {
+	font-weight: bold;
+}
+
+.record-text {
+	color: #f00;
+}
+
+.stop-text {
+	color: #f90; 
+}
+
+.listen-text {
+	color: #c3c;
+}
+
+.play-text {
+	color: #690; 
+}
+
+/*~*~*~*~*~*~*~* General Styles *~*~*~*~*~*~*~*/
+
+.show {
+	display: block;
+}
+
+.hide {
+	display: none;
+}
+
+.error-msg {
+	color: #f00;
+}
+
+.no-script-message {
+	margin-top: 30px;
+	text-align: center;
+}
+
+.generic-button {
+	display: inline-block;
+	padding: 4px 24px;
+	font-weight: normal;
+	text-decoration: none;
+	color: #000;
+	border: 1px solid #999;
+	background: rgb(238,238,238); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(238,238,238,1) 0%, rgba(204,204,204,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(238,238,238,1)), color-stop(100%,rgba(204,204,204,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
+}
+
+.generic-button:hover {
+	border: 1px solid #333;
+	cursor: pointer;
+	color: #000;
+}
+
+.generic-button.disabled {
+	cursor: default;
+	background: #ddd;
+	color: #ccc;
+	border: 1px solid #ccc;
+}
+
+.flash-control {
+	display: block;
+	text-align: center;
+	margin: 0 auto;
+}	
+
+.link-to-test {
+	background-color: #fdffcc;
+	border: 1px solid #ffeda5;
+	padding: 10px 20px 10px;
+	text-align: center;
+	font-size: 1.2em;
+}
+
+.link-to-test p {
+	margin-top: 0;
+}
+
+/*********************** End Content Styles ***********************/
+
+/*********************** begin header ***********************/
+
+.header {
+	border-bottom: 2px solid #999;
+}
+
+.header .container {
+	padding: 10px 6px;
+	margin-bottom: 0;
+}
+
+.actfl-logo {
+	width: 127px;
+	height: 87px;
+}
+
+/*********************** end header ***********************/
+
+/*********************** begin footer ***********************/
+
+.footer {
+	border-top: 2px solid #999;
+}
+
+	.footer .container {
+		padding: 14px 6px;
+	}
+
+	.footer .footer-col {
+		float: left;
+		margin-right: 12px;
+	}
+
+	.footer .ACTFL-star-logo {
+		display: block;
+		margin-top: -4px;
+		width: 157px;
+		height: 44px;
+	}
+
+	.footer .lti-footer-logo {
+		display: block;
+		margin-top: 7px;
+		width: 96px;
+		height: 23px;
+	}
+
+/*********************** end footer ***********************/
+
+/*set the width of the page */
+/* applied to the header, content and footer */
+.container {
+	max-width: 960px;
+	margin: 0 auto 24px;
+}
+
+/* begin footer fix */
+html, body {
+    height: 100%;
+}
+
+.wrap {
+    min-height: 100%;
+    min-width: 960px;
+}
+
+.main {
+    padding-bottom: 72px; /* footer height */
+}
+
+.footer {
+	margin-top: -72px; /* negative value of footer height */
+    min-width: 960px;
+	height: 70px;
+}
+/* end footer fix */
+
+/*********************** ie styles ***********************/
+.ie .system-check-table td {
+	outline: 4px solid #fff;	
+}

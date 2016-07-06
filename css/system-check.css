@@ -1,0 +1,311 @@
+/*********************** Font Sizes ***********************/
+body {
+		font-size: 13px;
+}
+
+h2 {
+	font-size: 2em;
+}
+
+h3 {
+	font-size: 1.3em;
+}
+
+h4 {
+	font-size: 1em;
+}
+
+.footer .footer-copy p {
+	font-size: 0.7em;	
+	line-height: .7em;
+}
+
+/*********************** End Font Sizes ***********************/
+
+/*********************** Content Styles ***********************/
+
+.system-check-panel {
+	width: 400px;
+	margin: 24px auto 0;
+}
+
+/*~*~*~*~*~*~*~* Row/Column Styles *~*~*~*~*~*~*~*/
+
+.system-check-table {
+	width: 100%;
+	margin-top: 24px;
+	border-collapse:collapse;
+}
+
+.system-check-table th {
+	background-color: #f08b20;
+	color: #fff;
+	font-size: 0.9em;
+	padding: 10px 0;
+}
+
+.system-check-table tbody {
+	font-size: 0.85em;
+}
+
+.system-check-table tbody td {
+	border: 4px solid #fff;	
+}
+
+.system-check-table td {
+	padding: 6px 10px;
+}
+
+.system-check-table tr:nth-child(odd) {
+	background-color: #eee;
+}
+
+.system-check-table tr:nth-child(even) {
+	background-color: #d9e4ee;
+}
+
+.system-check-table tr:nth-child(1) {
+	background-color: #fff;
+}
+
+.system-check-table tr td:nth-child(1) {
+	width: 150px;
+	text-align: center;
+	font-weight: bolder;
+}
+
+.system-check-table tr td:nth-child(2) {
+	width: 200px;
+}
+
+.system-check-table tr td:nth-child(3) {
+	width: 300px;
+}
+
+.system-check-table tr td:nth-child(4) {
+	text-align: center;
+}
+
+/*~*~*~*~*~*~*~* Cofirmation Dialog *~*~*~*~*~*~*~*/
+
+.confirmation {
+	text-align: center;
+	font-size: 1.2em;
+	font-weight: bold;
+	margin-bottom: 4px;
+}
+
+.confirmation p {
+	margin-bottom: 6px;
+}
+
+.system-check-panel .generic-button,
+.system-check-table .generic-button {
+	display: inline-block;
+	padding: 4px 24px;
+	font-weight: normal;
+	text-decoration: none;
+	color: #000;
+	border: 1px solid #999;
+	background: rgb(238,238,238); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(238,238,238,1) 0%, rgba(204,204,204,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(238,238,238,1)), color-stop(100%,rgba(204,204,204,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
+}
+
+.system-check-panel .generic-button:hover,
+.system-check-table .generic-button:hover {
+	border: 1px solid #333;
+	cursor: pointer;
+	color: #000;
+}
+
+.system-check-panel .generic-button.disabled,
+.system-check-table .generic-button.disabled {
+	cursor: default;
+	background: #ddd;
+	color: #ccc;
+	border: 1px solid #ccc;
+}
+
+.passCheck, .failCheck {
+	margin: 0 2px;
+}
+
+/*~*~*~*~*~*~*~* Pass/Fail Icons *~*~*~*~*~*~*~*/
+
+.icon-key {
+	list-style: none;
+}
+
+.system-check-table .fa {
+	font-size: 16px;
+}
+
+.system-check-table .fa-check {
+	color: #690;
+}
+
+.system-check-table .fa-times {
+	color: #f00;
+}
+
+/*~*~*~*~*~*~*~* Flash Controls *~*~*~*~*~*~*~*/
+
+.installFlash,
+.upgradeFlash,
+.displayFlash {
+	display: none;
+}
+
+.flash-control,
+#keyboardCheck {
+	display: block;
+	text-align: center;
+	margin: 0 auto;
+	position: relative; 
+}	
+
+.flash-instructions {
+	text-align: center;
+}
+
+td {
+	position: relative;
+}
+
+/*~*~*~*~*~*~*~* Mic/Audio Instructions *~*~*~*~*~*~*~*/
+
+ol.mic-instructions {
+	padding-left: 12px;	
+}
+
+ol.mic-instructions li {		
+	margin: 0 auto;
+	text-align: left;
+	line-height: 16px;
+}
+
+.record-text,
+.stop-text,
+.listen-text,
+.play-text {
+	font-weight: bold;
+}
+
+.record-text {
+	color: #f00;
+}
+
+.stop-text {
+	color: #f90; 
+}
+
+.listen-text {
+	color: #c3c;
+}
+
+.play-text {
+	color: #690; 
+}
+
+	.show {
+		display: block;
+	}
+
+	.hide {
+		display: none;
+	}
+
+	#errorMessageDiv{
+		color: #a81825;
+		margin-left: 30px;
+	}
+
+/*~*~*~*~*~*~*~* General Styles *~*~*~*~*~*~*~*/
+
+.centered {
+	text-align: center;
+}
+
+/*********************** End Content Styles ***********************/
+
+/*********************** begin header ***********************/
+
+.header {
+	background-color: #B0252E;
+	height: 70px;
+}
+
+.header .container {
+	padding: 0 6px;
+}
+
+.aappl-logo {
+	width: 350px;
+	margin-top: 14px;
+}
+
+/*********************** end header ***********************/
+
+/*********************** begin footer ***********************/
+
+.footer {
+	background-color: #B0252E;
+	color: #fff;
+}
+
+	.footer .container {
+		padding: 14px 6px;
+	}
+
+	.footer .footer-col {
+		float: left;
+		margin-right: 12px;
+	}
+
+	.footer .lti-footer-logo {
+		display: block;
+		margin-top: 7px;
+		width: 96px;
+		height: 23px;
+	}
+
+/*********************** end footer ***********************/
+
+/*set the width of the page */
+/* applied to the header, content and footer */
+.container {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+/* begin footer fix */
+html, body {
+    height: 100%;
+}
+
+.wrap {
+    min-height: 100%;
+    min-width: 960px;
+}
+
+.main {
+    padding-bottom: 70px; /* footer height */
+}
+
+.footer {
+	margin-top: -70px; /* negative value of footer height */
+    min-width: 960px;
+	height: 70px;
+}
+/* end footer fix */
+
+/*********************** ie styles ***********************/
+.ie .system-check-table td {
+	outline: 4px solid #fff;	
+}
