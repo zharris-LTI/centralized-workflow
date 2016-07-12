@@ -5,7 +5,7 @@ body {
 
 h2 {
 	font-size: 2em;
-	text-align: center;
+	font-weight: normal;
 }
 
 h3 {
@@ -31,38 +31,36 @@ a {
 /*********************** Content Styles ***********************/
 
 .system-msg {
-	border-left: 12px solid;
-	margin: 24px auto 0;
+	margin: 24px auto 24px;
+	padding: 10px 20px;
+	color: #fff;
+	text-align: center;
 }
 
 	.system-msg.error {
-		border-color: #f00;
+		background-color: #f00;
 	}
 
 	.system-msg.error .fa {
-		color: #f00;
+		color: #fff;
 	}
 
 	.system-msg.pass {
-		border-color: #690;
+		background-color: #690;
 	}
 
 	.system-msg.pass  .fa {
-		color: #690;
+		color: #fff;
 	}
 
 	.system-msg .fa {
-		float: left;
-		margin: 10px 6px 0 -10px;
 		font-size: 1.5em;
 	}
 
 	.system-msg p {
-		padding: 12px 0 0 16px;
+		display: inline-block;
 		margin: 0;
-		text-align: center;
 		font-size: 1.2em;
-		font-weight: bold;
 	}
 
 /*~*~*~*~*~*~*~* Panel Styles *~*~*~*~*~*~*~*/
@@ -116,8 +114,8 @@ a {
 }
 
 .system-check-table th {
-	background-color: #94AAB5;
-	color: #fff;
+	background-color: #fff;
+	color: #333;
 	font-size: 0.9em;
 	padding: 10px 0;
 }
@@ -127,19 +125,97 @@ a {
 }
 
 .system-check-table tbody td {
-	border: 4px solid #fff;	
+	border: none;	
 }
 
 .system-check-table td {
 	padding: 6px 10px;
 }
 
-.system-check-table tr:nth-child(odd) {
-	background-color: #d9e4ee;
+/* first row */
+.system-check-table tr:nth-child(1) td:nth-child(1) {
+	background-color: #ffe4a3;
 }
 
-.system-check-table tr:nth-child(even) {
-	background-color: #eee;
+.system-check-table tr:nth-child(1) td:nth-child(2) {
+	background-color: #ffedc0;
+}
+
+.system-check-table tr:nth-child(1) td:nth-child(3) {
+	background-color: #fff2cf;
+}
+
+.system-check-table tr:nth-child(1) td:nth-child(4) {
+	background-color: #fffbf1;
+}
+
+
+/* second row */
+.system-check-table tr:nth-child(2) td:nth-child(1) {
+	background-color: #efdf9a;
+}
+
+.system-check-table tr:nth-child(2) td:nth-child(2) {
+	background-color: #efe7b4;
+}
+
+.system-check-table tr:nth-child(2) td:nth-child(3) {
+	background-color: #efebc2;
+}
+
+.system-check-table tr:nth-child(2) td:nth-child(4) {
+	background-color: #eff4e0;
+}
+
+/* third row */
+.system-check-table tr:nth-child(3) td:nth-child(1) {
+	background-color: #d9d88e;
+}
+
+.system-check-table tr:nth-child(3) td:nth-child(2) {
+	background-color: #d9dfa4;
+}
+
+.system-check-table tr:nth-child(3) td:nth-child(3) {
+	background-color: #d9e3b0;
+}
+
+.system-check-table tr:nth-child(3) td:nth-child(4) {
+	background-color: #d9eaca;
+}
+
+/* fourth row */
+.system-check-table tr:nth-child(4) td:nth-child(1) {
+	background-color: #c8d794;
+}
+
+.system-check-table tr:nth-child(4) td:nth-child(2) {
+	background-color: #c8dca1;
+}
+
+.system-check-table tr:nth-child(4) td:nth-child(3) {
+	background-color: #c8dfb0;
+}
+
+.system-check-table tr:nth-child(4) td:nth-child(4) {
+	background-color: #c8e2b7;
+}
+
+/* fifth row */
+.system-check-table tr:nth-child(5) td:nth-child(1) {
+	background-color: #bbd28b;
+}
+
+.system-check-table tr:nth-child(5) td:nth-child(2) {
+	background-color: #bbd696;
+}
+
+.system-check-table tr:nth-child(5) td:nth-child(3) {
+	background-color: #bbd9a3;
+}
+
+.system-check-table tr:nth-child(5) td:nth-child(4) {
+	background-color: #bbdcaa;
 }
 
 .system-check-table tr td:nth-child(1) {
@@ -158,6 +234,54 @@ a {
 
 .system-check-table tr td:nth-child(4) {
 	text-align: center;
+}
+
+/*~*~*~*~*~*~*~* Title Styles *~*~*~*~*~*~*~*/
+
+.title-box {
+	padding: 16px 0;
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+}
+
+.title-box h2 {
+	background-color: #999;
+	color: #fff;
+	margin: 0;
+	padding: 40px 20px 5px;
+	-webkit-border-radius: 0px 40px 0px 0px;
+	-moz-border-radius: 0px 40px 0px 0px;
+	border-radius: 0px 40px 0px 0px;	
+}
+
+.title-box h2 span {
+	font-size: 0.6em;
+	float: right;
+	margin-top: 9px;
+}
+
+.system-check-intructions {
+	padding: 10px 20px 10px;
+	margin-top: 0;
+	font-size: 1.1em;
+	font-style: italic;
+}
+
+/*~*~*~*~*~*~*~* Test Link *~*~*~*~*~*~*~*/
+
+.link-to-test {
+	text-align: right;
+}
+
+.link-to-test a {
+	display: inline-block;
+	padding: 10px 86px 10px 20px;
+	background: #61b24c url("../media/arrow.png") no-repeat 210px;
+	color: #fff;
+	font-size: 1.2em;
+	font-weight: normal;
+	text-decoration: none;
+	text-transform: uppercase;
 }
 
 /*~*~*~*~*~*~*~* Cofirmation Dialog *~*~*~*~*~*~*~*/
@@ -313,29 +437,17 @@ ol.mic-instructions li {
 	margin: 0 auto;
 }	
 
-.link-to-test {
-	background-color: #fdffcc;
-	border: 1px solid #ffeda5;
-	padding: 10px 20px 10px;
-	text-align: center;
-	font-size: 1.2em;
-}
-
-.link-to-test p {
-	margin-top: 0;
-}
-
 /*********************** End Content Styles ***********************/
 
 /*********************** begin header ***********************/
 
 .header {
-	border-bottom: 2px solid #999;
 }
 
 .header .container {
 	padding: 10px 6px;
 	margin-bottom: 0;
+	text-align: center;
 }
 
 .actfl-logo {
@@ -403,8 +515,3 @@ html, body {
 	height: 70px;
 }
 /* end footer fix */
-
-/*********************** ie styles ***********************/
-.ie .system-check-table td {
-	outline: 4px solid #fff;	
-}

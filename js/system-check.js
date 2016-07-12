@@ -119,9 +119,17 @@ $(document).ready(function(){
 	
 	//*~*~*~*~*~*~*~*Intenet Explorer hacks*~*~*~*~*~*~*~*//
 
-	//zebra striping for ie8
-	$('.ie8 .system-check-table tr:odd').css('background-color','#eee');
-	$('.ie8 .system-check-table tr:even').css('background-color','#d9e4ee');
+	// first row
+	$('.ie8 .system-check-table tr:nth-child(1) td:nth-child(1)').css('background-color','#ffe4a3');
+	$('.ie8 .system-check-table tr:nth-child(1) td:nth-child(2)').css('background-color','#ffedc0');
+	$('.ie8 .system-check-table tr:nth-child(1) td:nth-child(3)').css('background-color','#fff2cf');
+	$('.ie8 .system-check-table tr:nth-child(1) td:nth-child(4)').css('background-color','#fffbf1');
+
+	// second row
+	$('.ie8 .system-check-table tr:nth-child(2) td:nth-child(1)').css('background-color','#efdf9a');
+	$('.ie8 .system-check-table tr:nth-child(2) td:nth-child(2)').css('background-color','#efe7b4');
+	$('.ie8 .system-check-table tr:nth-child(2) td:nth-child(3)').css('background-color','#efebc2');
+	$('.ie8 .system-check-table tr:nth-child(2) td:nth-child(4)').css('background-color','#eff4e0');
 
 	//column styles for ie8
 	$('.ie8 .system-check-table tr td:nth-child(1)').css('width','150px').css('text-align','center').css('font-weight','bold');	
