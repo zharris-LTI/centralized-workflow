@@ -87,7 +87,7 @@ $(document).ready(function(){
 
 	//*~*~*~*~*~*~*~*Check Requirements*~*~*~*~*~*~*~*//
 	
-	 // If all rows are checked, enable link to login page
+	 // If all rows are checked, display success message else display fail message
 	function checkRequirements() {
 		var icons = $('td > i').filter('.check-status').length;
 		var iconsWaiting = $('td > i').filter('.waiting').length;
@@ -95,11 +95,9 @@ $(document).ready(function(){
 		
 		if (iconsWaiting === 0) {
 			if (icons === iconsChecked) {
-				//$('#login-btn').removeClass('disabled').attr('href', 'http://aappl.actfltesting.org/');
 				$('#pass-message-top, #pass-message-bottom').slideDown();
 				$('#fail-message-top, #fail-message-bottom').slideUp();
 			} else {
-				$('#login-btn').addClass('disabled').removeAttr('href');
 				$('#pass-message-top, #pass-message-bottom').slideUp();
 				$('#fail-message-top, #fail-message-bottom').slideDown();
 			}			
