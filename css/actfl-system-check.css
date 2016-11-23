@@ -21,11 +21,6 @@ a {
 	color: #00f;
 }
 
-.footer .footer-copy p {
-	font-size: 0.7em;	
-	line-height: .7em;
-}
-
 /*********************** End Font Sizes ***********************/
 
 /*********************** Content Styles ***********************/
@@ -140,17 +135,18 @@ a {
 /*~*~*~*~*~*~*~* Test Link *~*~*~*~*~*~*~*/
 
 .test-link-block {
-	text-align: right;
+	text-align: center;
+	padding-top: 12px;
 }
 
 .test-button {
 	display: inline-block;
-	background: #ff6927 url("../media/arrow.png") no-repeat 110px -1px;
+	background: #ff6927 url("../media/arrow.png") no-repeat 80px -4px;
+	border-bottom: 1px solid #ccc;
 	color: #fff;
-/* 	width: 134px; */
-	padding: 0 70px 0 54px;
-	line-height: 42px;
-	font-size: 1.3em;
+	padding: 0 50px 0 34px;
+	line-height: 37px;
+	font-size: 1.05em;
 	font-weight: bold;
 	text-align: center;
 	text-decoration: none;
@@ -287,32 +283,14 @@ ol.mic-instructions li {
 
 /*********************** begin footer ***********************/
 
-.footer {
-	border-top: 2px solid #999;
+.footer .container {
+	margin-bottom: 0;
+	text-align: right;
 }
 
-	.footer .container {
-		padding: 14px 6px;
-	}
-
-	.footer .footer-col {
-		float: left;
-		margin-right: 12px;
-	}
-
-	.footer .ACTFL-star-logo {
-		display: block;
-		margin-top: -4px;
-		width: 157px;
-		height: 44px;
-	}
-
-	.footer .lti-footer-logo {
-		display: block;
-		margin-top: 7px;
-		width: 96px;
-		height: 23px;
-	}
+.footer .logo-actfl-lti {
+	padding-top: 26px;
+}
 
 /*********************** end footer ***********************/
 
@@ -334,12 +312,12 @@ html, body {
 }
 
 .main {
-    padding-bottom: 72px; /* footer height */
+    padding-bottom: 100px; /* footer height */
 }
 
 .footer {
-	margin-top: -72px; /* negative value of footer height */
+	margin-top: -100px; /* negative value of footer height */
     min-width: 960px;
-	height: 70px;
+	height: 100px;
 }
 /* end footer fix */
