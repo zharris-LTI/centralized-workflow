@@ -44,6 +44,7 @@ a {
 }
 
 .system-check-table thead th {
+	text-transform: uppercase;
 	font-size: 0.86em;
 	font-weight: normal;
 	background-color: #3878ff;
@@ -162,11 +163,13 @@ a {
 }
 
 .status.success {
-	background: #8dc63f url('../media/icon-success.png') center no-repeat;
+	background: #fff url('../media/icon-success.png') center no-repeat;
+	border: 1px solid #ccc;
 }
 
 .status.fail {
-	background: #ed1c24 url('../media/icon-fail.png') center no-repeat;
+	background: #fff url('../media/icon-fail.png') center no-repeat;
+	border: 1px solid #ccc;
 }
 
 /*~*~*~*~*~*~*~* Flash Controls *~*~*~*~*~*~*~*/
@@ -274,9 +277,22 @@ ol.mic-instructions li {
 /*********************** begin header ***********************/
 
 .header h3 {
+	position: relative;
 	border-bottom: 1px solid #ccc;
-	margin: 0;
-	padding: 12px 0;t
+	height: 50px;
+	line-height: 48px;
+}
+
+.logo-lti {
+	font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
+	font-size: 2.31em;
+	color: #05539c;
+}
+
+.text-title {
+	position: absolute;
+	top: 2px;
+	padding-left: 20px;
 }
 
 /*********************** end header ***********************/
@@ -285,7 +301,17 @@ ol.mic-instructions li {
 
 .footer .container {
 	margin-bottom: 0;
-	text-align: right;
+	color: #999;
+	font-size: 0.85em;
+}
+
+.footer .trademark-test {
+	display: inline-block;
+}
+
+.footer .trademark-lti {
+	display: inline-block;
+	float: right;
 }
 
 .footer .logo-actfl-lti {
