@@ -4,7 +4,7 @@ $(document).ready(function(){
 
 	var BandwidthRequired = 60; // 1500 is 1.5 Mbps or T1
 
-	var imageAddr = "http://server1.actfltesting.org/bandwidth-image/31120037-5mb.jpg"; 
+	var imageAddr = "http://server1.actfltesting.org/bandwidth-image/31120037-5mb.jpg";
 	var downloadSize = 4995374; //bytes
 
 	window.onload = function() {
@@ -25,11 +25,11 @@ $(document).ready(function(){
 		download.onload = function () {
 			endTime = (new Date()).getTime();
 			showResults();
-		}
+		};
 
 		download.onerror = function (err, msg) {
 			connectionCheck.html('Error performing this test');
-		}
+		};
 
 		startTime = (new Date()).getTime();
 		var cacheBuster = "?nnn=" + startTime;
