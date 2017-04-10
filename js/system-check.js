@@ -1,7 +1,7 @@
 $(document).ready(function(){
-	
+
 	//*~*~*~*~*~*~*~*Test Bandwidth*~*~*~*~*~*~*~*//
-	
+
 	var BandwidthRequired = 60; // 1500 is 1.5 Mbps or T1
 
 	var imageAddr = "http://server1.actfltesting.org/bandwidth-image/31120037-5mb.jpg"; 
@@ -11,7 +11,7 @@ $(document).ready(function(){
 		var systemCheckTable = $('#system-check');
 		var connectionCheck = $('#progress');
 		var minConnection = $('#min-connection');
-		
+
 		systemCheckTable.show();
 		minConnection.html(commaSeparateNumber(BandwidthRequired));
 		connectionCheck.html('Calculating bandwidth...');
@@ -26,34 +26,34 @@ $(document).ready(function(){
 			endTime = (new Date()).getTime();
 			showResults();
 		}
-		
+
 		download.onerror = function (err, msg) {
 			connectionCheck.html('Error performing this test');
 		}
-		
+
 		startTime = (new Date()).getTime();
 		var cacheBuster = "?nnn=" + startTime;
 		download.src = imageAddr + cacheBuster;
-		
+
 		function showResults() {
 			var duration = (endTime - startTime) / 1000;
 			var bitsLoaded = downloadSize * 8;
 			var speedBps = (bitsLoaded / duration).toFixed(2);
 			var speedKbps = (speedBps / 1024).toFixed(2);
 			var speedMbps = (speedKbps / 1024).toFixed(2);
-			
+
 			if(speedKbps < bandwidth) {
 				$('#bandwidthCheckImg').removeClass().addClass('status fail');
 				$('#bandwidthError').slideDown();
 			} else {
 				$('#bandwidthCheckImg').removeClass().addClass('status success');
 			}
-						
+
 			connectionCheck.html('Connection Speed: ' + commaSeparateNumber(speedKbps) + ' Kbps');
 			checkRequirements();
 		}
 	}
-	
+
 	function commaSeparateNumber(val){
 		while (/(\d+)(\d{3})/.test(val.toString())){
 			val = val.toString().replace(/(\d+)(\d{3})/, '$1'+','+'$2');
@@ -64,19 +64,19 @@ $(document).ready(function(){
 
 
 	//*~*~*~*~*~*~*~*Flash Test*~*~*~*~*~*~*~*//
-	
+
 	var flashDependantCriteria = $('#portsCheckImg,#flashCheckImg,#MP3CheckImg,#microphoneCheckImg,#languageCheckImg');
 
 	//Test for Flash, Audio and Mic
 	var minVersion = '10'; //minimum Flash version required
 
 	$('.min-version-number').html(minVersion); //inject minimum Flash version required into markup
-	
+
 	var flashVers = swfobject.getFlashPlayerVersion(); //Get browser's Flash version
 	$('.version-number').html(flashVers.major);
-	
+
 	var minVersCheck = swfobject.hasFlashPlayerVersion(minVersion); //Check if browser has minimum required Flash version
-	
+
 	if(minVersCheck){ // if browser passes the required version check display flash control
 		$('.displayFlash').toggle();
 		$('#flashCheckImg').removeClass().addClass('status success'); //check-status fa fa-check');
@@ -90,13 +90,13 @@ $(document).ready(function(){
 	}
 
 	//*~*~*~*~*~*~*~*Check Requirements*~*~*~*~*~*~*~*//
-	
+
 	 // If all rows are checked, display success message else display fail message
 	function checkRequirements() {
 		var icons = $('td').filter('.status').length;
 		var iconsWaiting = $('td').filter('.waiting').length;
 		var iconsChecked = $('td').filter('.success').length;
-		
+
 		if (iconsWaiting === 0) {
 			if (icons === iconsChecked) {
 				$('#pass-message-bottom').show();
@@ -104,21 +104,21 @@ $(document).ready(function(){
 			} else {
 				$('#pass-message-bottom').hide();
 				$('#fail-message-bottom').show();
-			}			
+			}
 		}
 	}
 
 	//*~*~*~*~*~*~*~*Pop Test Windows*~*~*~*~*~*~*~*//
-	
+
 	$('#wpt-test-link').click( function() {
 		window.open("../opicwriting.html","opicwriting","width=970,height=700,screenX=0,screenY=0,menubar=no,toolbar=no,location=no,scrollbars=no,status=no,titlebar=no,resizable=no");
 	});
 
 	$('#wpt-demo-link').click( function() {
-		window.open("../opicwriting_demo.html","opicwriting","width=970,height=700,screenX=0,screenY=0,menubar=no,toolbar=no,location=no,scrollbars=no,status=no,titlebar=no,resizable=no"); 
+		window.open("../opicwriting_demo.html","opicwriting","width=970,height=700,screenX=0,screenY=0,menubar=no,toolbar=no,location=no,scrollbars=no,status=no,titlebar=no,resizable=no");
 	});
 
-	
+
 	//*~*~*~*~*~*~*~*Intenet Explorer hacks*~*~*~*~*~*~*~*//
 
 	// first row
@@ -149,11 +149,11 @@ $(document).ready(function(){
 /* 	$('.ie8 .system-check-table tr:nth-child(5) td:nth-child(1)').css('background-color','#bbd28b');
 	$('.ie8 .system-check-table tr:nth-child(5) td:nth-child(2)').css('background-color','#bbd696');
 	$('.ie8 .system-check-table tr:nth-child(5) td:nth-child(3)').css('background-color','#bbd9a3');
-	$('.ie8 .system-check-table tr:nth-child(5) td:nth-child(4)').css('background-color','#bbdcaa');	
- */	
+	$('.ie8 .system-check-table tr:nth-child(5) td:nth-child(4)').css('background-color','#bbdcaa');
+ */
 	//column styles for ie8
-/* 	$('.ie8 .system-check-table tr td:nth-child(1)').css('width','150px').css('text-align','center').css('font-weight','bold');	
-	$('.ie8 .system-check-table tr td:nth-child(2)').css('width','200px');	
-	$('.ie8 .system-check-table tr td:nth-child(3)').css('width','300px');	
+/* 	$('.ie8 .system-check-table tr td:nth-child(1)').css('width','150px').css('text-align','center').css('font-weight','bold');
+	$('.ie8 .system-check-table tr td:nth-child(2)').css('width','200px');
+	$('.ie8 .system-check-table tr td:nth-child(3)').css('width','300px');
 	$('.ie8 .system-check-table tr td:nth-child(4)').css('text-align','center'); */
 });
