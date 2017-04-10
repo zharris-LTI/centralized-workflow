@@ -111,7 +111,7 @@ $(document).ready(function(){
 	//*~*~*~*~*~*~*~*Pop Test Windows*~*~*~*~*~*~*~*//
 	
 	$('#wpt-test-link').click( function() {
-		window.open("../opicwriting_demo.html","opicwriting","width=970,height=700,screenX=0,screenY=0,menubar=no,toolbar=no,location=no,scrollbars=no,status=no,titlebar=no,resizable=no"); 
+		window.open("../opicwriting.html","opicwriting","width=970,height=700,screenX=0,screenY=0,menubar=no,toolbar=no,location=no,scrollbars=no,status=no,titlebar=no,resizable=no");
 	});
 
 	$('#wpt-demo-link').click( function() {
