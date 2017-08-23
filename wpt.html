@@ -11,8 +11,8 @@
 <meta http-equiv="cache-control" content="no-cache, no-store, must-revalidate" />
 <meta HTTP-EQUIV="expires" CONTENT="0">
 
-<link rel="stylesheet" href="css/normalize.css"/>	
-<link rel="stylesheet" href="css/actfl-system-check.css?vers=2.0"/>	
+<link rel="stylesheet" href="css/normalize.css"/>
+<link rel="stylesheet" href="css/actfl-system-check.css?vers=2.0"/>
 
 <!-- Using jquery 1.12.4 because of IE 6-8 support -->
 <script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
@@ -25,22 +25,23 @@
 </head>
 <body>
 
+	<!-- another comment -->
 	<div class="wrap new-class another-class">
 		<div class="main">
-			
+
 			<div class="header">
 				<div class="container">
 					<h3><span class="logo-lti">LTI</span><span class="text-title"> System Check</span></h3>
 				</div>
 			</div><!-- end head -->
-			
+
 			<div class="content">
 				<div class="container">
 					<div class="title-block">
 						<h2>Writing Proficiency Test (WPT)</h2>
-						<p>Let's make sure your computer meets all of the required system checks.</p>						
+						<p>Let's make sure your computer meets all of the required system checks.</p>
 					</div>
-									
+
 					<noscript>
 						<div class="error-msg no-script-message">
 							In order to perform the system check and take the test, you must have javascript enabled. Please contact your system administrator.
@@ -58,7 +59,7 @@
 						</thead>
 						<tbody>
 
-							<!--****************************** Flash Player ******************************-->							 
+							<!--****************************** Flash Player ******************************-->
 							<tr>
 								<td>Flash Player</td>
 								<td><p>Flash Player <span class="min-version-number"></span> or greater.</p></td>
@@ -75,7 +76,7 @@
 								</td>
 							</tr>
 
-						<!--****************************** Bandwidth ******************************-->						 
+						<!--****************************** Bandwidth ******************************-->
 							<tr>
 								<td>Bandwidth</td>
 								<td><p>Connection speed of <span id="min-connection"></span> Kbps per candidate.</p></td>
@@ -83,31 +84,31 @@
 									<p id="progress"></p>
 								</td>
 								<td id="bandwidthCheckImg" class="status waiting"></td>
-							</tr>							
+							</tr>
 							<tr id="bandwidthError" class="error-msg hide">
 								<td colspan="4">
 									<p>Your connection speed is not fast enough to take the test. Please contact your system administrator.</p>
 								</td>
 							</tr>
-														
+
 						</tbody>
 					</table>
-				
+
 					<div id="pass-message-bottom" class="system-check-result success hide">
 						<p><strong>Success!</strong> You've passed all of the system checks.</p>
 					</div>
-										
+
 					<div id="fail-message-bottom" class="system-check-result fail hide">
 						<p><strong>Error!</strong> Your computer does not meet the minimum requirements. Please contact your system administrator.</p>
-					</div>					
+					</div>
 
 					<div class="test-link-block">
 						<a id="wpt-test-link" class="test-button" href="#">Next</a>
 					</div>
-					
+
 				</div><!-- end container -->
 			</div><!-- end content -->
-			
+
 		</div><!-- end main-content -->
 	</div><!-- end wrap -->
 
@@ -118,6 +119,6 @@
         </div>
     </div><!-- end footer -->
 
-	
+
 </body>
 </html>
