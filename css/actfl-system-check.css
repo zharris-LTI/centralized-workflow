@@ -25,10 +25,10 @@ a {
 
 /*********************** Content Styles ***********************/
 
-/*~*~*~*~*~*~*~* Panel Styles *~*~*~*~*~*~*~*/
-	
+/*~*~*~*~*~*~*~* Panel Styles change here too *~*~*~*~*~*~*~*/
+
 .system-check-panel.panel {
-	margin: 24px auto;	
+	margin: 24px auto;
 	width: 400px;
 }
 
@@ -98,7 +98,7 @@ a {
 
 .system-check-result.success {
 	border-left: 4px solid #8dc63f;
-	background: #eee url('../media/icon-system-success.png') no-repeat;	
+	background: #eee url('../media/icon-system-success.png') no-repeat;
 }
 
 .system-check-result.success strong {
@@ -107,7 +107,7 @@ a {
 
 .system-check-result.fail {
 	border-left: 4px solid #ed1c24;
-	background: #eee url('../media/icon-system-fail.png') no-repeat;	
+	background: #eee url('../media/icon-system-fail.png') no-repeat;
 }
 
 .system-check-result.fail strong {
@@ -192,7 +192,7 @@ a {
 	margin: 0 auto;
 	width: 250px;
 	height: 140px;
-	background: url('../media/flash-control-mic.png');	
+	background: url('../media/flash-control-mic.png');
 /* 	border: 1px solid #000; */
 }
 
@@ -200,7 +200,7 @@ a {
 	margin: 0 auto;
 	width: 135px;
 	height: 62px;
-	background: url('../media/flash-control-audio.png');	
+	background: url('../media/flash-control-audio.png');
 /* 	border: 1px solid #000; */
 }
 
@@ -215,10 +215,10 @@ a {
 }
 
 ol.mic-instructions {
-	padding-left: 12px;	
+	padding-left: 12px;
 }
 
-ol.mic-instructions li {		
+ol.mic-instructions li {
 	margin: 0 auto;
 	text-align: left;
 	line-height: 16px;
@@ -241,19 +241,19 @@ ol.mic-instructions li {
 	color: #ed1c24;
 }
 
-.passCheck, 
+.passCheck,
 .failCheck {
 	display: inline-block;
 	margin: 0 12px 4px;
 	text-decoration: underline;
 }
 
-.passCheck:hover, 
+.passCheck:hover,
 .failCheck:hover {
 	cursor: pointer;
 }
 
-.passCheck.disabled, 
+.passCheck.disabled,
 .failCheck.disabled {
 	cursor: default;
 	color: #ccc;
@@ -278,7 +278,7 @@ ol.mic-instructions li {
 	display: block;
 	text-align: center;
 	margin: 0 auto;
-}	
+}
 
 /*********************** End Content Styles ***********************/
 
